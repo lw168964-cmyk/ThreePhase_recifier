@@ -203,7 +203,7 @@ static void UI_Show_Measure(void) {
     // 显示标题
     OLED_ShowString(15, 0, "测量界面", OLED_8X16);
     OLED_ShowString(20, 16, "U1:", OLED_8X16);
-    OLED_ShowFloatNum(50, 16,111 , 2, 2, OLED_8X16);
+    OLED_ShowFloatNum(50, 16,UDC , 2, 2, OLED_8X16);
     OLED_ShowString(20, 32, "I1:", OLED_8X16);
     OLED_ShowFloatNum(50, 32,222 , 2, 2, OLED_8X16);
     OLED_ShowString(20, 48, "f1:", OLED_8X16);

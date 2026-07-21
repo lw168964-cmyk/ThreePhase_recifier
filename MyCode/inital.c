@@ -31,7 +31,7 @@ SVPWM_STRUCT SVPWM;//SVPWM参数结构体
 
 /*电压环结构体*/
 ST_PID Udc_PID={.fpDes=0,.fpFB= 0,						 /*Des, FB*/
-						  .fpKp=0.2,.fpKi=1.5, .fpKd=0,					 /*Kp, Ki, Kd*/ // Ki从3降到1.5，减少过冲
+						  .fpKp=0.2,.fpKi=0.5, .fpKd=0,					 /*Kp, Ki, Kd*/ // Ki 1.5->0.5：抑制电压环低频极限环(电流幅值拍频包络)
 						  .fpUp=0,.fpUi= 0,.fpUd= 0,					 /*Up, Ui, Ud*/
 						  .fpE=0, .fpPreE=0,.fpSumE= 0,.fpU= 0,				 /*E, PreE, SumE, U*/
 						  .fpUMax=200,.fpEpMax=udmax , .fpEiMax_p=udmax,.fpEiMax_n= udmax,.fpEdMax= udmax,.fpEMin= 0,
