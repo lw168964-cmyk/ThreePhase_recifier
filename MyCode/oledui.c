@@ -95,6 +95,7 @@ void OLEDUI_Key_Handle(void) {
             }
             if (key_ok) {          // 确认：进入单网测量界面
                 g_current_ui = UI_Measure;
+								SoftStart_Reset();//每次启动前请求重新软启动：斜坡从当前实测母线电压起步
 								HAL_TIM_Base_Start_IT(&htim6);//开启定时中断
 
 								HAL_HRTIM_WaveformCounterStart(&hhrtim1,HRTIM_TIMERID_MASTER);//开启通道输出

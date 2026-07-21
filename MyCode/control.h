@@ -10,4 +10,6 @@ extern float Uab_rms;//AB线电压有效值
 
 void Volt_Loop_Control(float Udc_def); //单电压环控制
 
+void SoftStart_Reset(void); //请求重新软启动（开启PWM/定时中断前调用）
+
 #endif
