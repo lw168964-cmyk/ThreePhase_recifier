@@ -1,0 +1,38 @@
+# STM32 / Keil MDK-ARM build outputs
+*.o
+*.d
+*.crf
+*.lnp
+*.dep
+*.axf
+*.elf
+*.hex
+*.bin
+*.htm
+*.map
+*.iex
+*.lst
+*.build_log.htm
+*.uvguix.*
+*.scvd
+*.dbgconf
+JLinkLog.txt
+JLinkSettings.ini
+
+# Keil build output directories
+Objects/
+Listings/
+DebugConfig/
+RTE/
+
+# STM32CubeMX generated (optional - uncomment if you want to exclude generated code)
+# Drivers/CMSIS/
+# Drivers/STM32G4xx_HAL_Driver/
+# Middlewares/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
