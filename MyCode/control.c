@@ -36,7 +36,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)  //中断回调 10k
 {
 	 if(htim==&htim6)
 	 {
-		Volt_Loop_Control(60); 
+		Volt_Loop_Control(62); 
 	 }
 }
 
